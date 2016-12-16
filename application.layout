@@ -376,13 +376,21 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
-                                    <a href="/events">EVENTS</a>                                
+                                    <a href="/events">CONTESTS & EVENTS</a>                                
                                 </span>
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">
-                                    <a href="/pages/cornwall-guest-services">GUEST SERVICES</a>                                
-                                </span>
+                                <span class="site_map_title">GUEST SERVICES</span>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/lambton-guest-services' target='_self'>Guest Services</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/lambton-gift-cards' target='_self'>Gift Cards</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/lambton-what-s-new' target='_self'>What's New</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/lambton-mall-walkers-club' target='_self'>Mall Walkers</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/lambton-in-the-community' target='_self'>In the Community</a>
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
@@ -398,15 +406,13 @@
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/cornwall-mall-info' target='_self'>Mall Info</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-accessibility' target='_self'>Accessibility</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-community-wifi' target='_self'>Community Relations</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-contact-us' target='_self'>Contact Us</a>
+                                <a class="site_map_submenu" href='/pages/cornwall-accessibility' target='_self'>Mall Photos</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/cornwall-security' target='_self'>Security</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-parking-at-cornwall-centre' target='_self'>Parking Info</a>
+                                <a class="site_map_submenu" href='/pages/cornwall-community-wifi' target='_self'>Accessibility</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/cornwall-contact-us' target='_self'>Contact Us</a>
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
