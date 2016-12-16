@@ -2105,6 +2105,7 @@ td.stores_pin{
 /* #2F3790 */
 body {
     background-image: url(//mallmaverick.com/system/site_images/photos/000/002/267/original/background2.png?1397075174);
+    background-attachment: fixed;
 }
 
 .homepop_up_container{
