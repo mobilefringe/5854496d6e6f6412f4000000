@@ -79,7 +79,7 @@
                     </button>
                     <ul class="dropdown-menu bottom">                                
                         <li class="mobile_menu_header" >
-                            <a href='' >STORES</a>
+                            <a href=''>STORES</a>
                         </li>
                         <li class="mobile_menu_item">
                             <a href='/stores'>Store Directory</a>
@@ -87,17 +87,17 @@
                         <li class="mobile_menu_item">
                             <a href='/map'>Shopping Map</a>
                         </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/promotions' >PROMOTIONS</a>
+                        <li class="mobile_menu_header">
+                            <a href='/promotions'>PROMOTIONS</a>
                         </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/events' >EVENTS</a>
+                        <li class="mobile_menu_header">
+                            <a href='/events'>CONTESTS & EVENTS</a>
                         </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/pages/cornwall-guest-services' >GUEST SERVICES</a>
+                        <li class="mobile_menu_header">
+                            <a href='/pages/cornwall-guest-services'>GUEST SERVICES</a>
                         </li>      
                         <li class="mobile_menu_header" >
-                            <a href='/jobs' >CAREERS</a>
+                            <a href='/jobs'>CAREERS</a>
                         </li>         
                         <li class="mobile_menu_header" >
                             <a href='' >ABOUT US</a>
@@ -106,29 +106,23 @@
                             <a href='/hours'>Shopping Hours</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-leasing'>Leasing</a>
+                            <a href='/pages/lambton-leasing'>Leasing</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-mall-info'>Mall Info</a>
+                            <a href='/pages/lambton-mall-info'>Mall Info</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-accessibility'>Accessibility</a>
-                        </li>        
-                        <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-community-wifi'>Community Relations</a>
+                            <a href='/pages/lambton-mall-info'>Mall Photos</a>
                         </li>
                         <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-contact-us'>Contact Us</a>
+                          <a href='/pages/lambton-security'>Security</a>
                         </li>
                         <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-security'>Security</a>
-                        </li>
+                            <a href='/pages/lambton-accessibility'>Accessibility</a>
+                        </li>       
                         <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-parking-at-cornwall-centre'>Parking Info</a>
+                          <a href='/pages/lambton-contact-us'>Contact Us</a>
                         </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/posts' >BLOG</a>
-                        </li> 
                     </ul>
                     <a id="mobile_logo" href="/">
                         <img class="mobile_logo" ALT="mobile_logo" src="//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700" />
@@ -177,10 +171,27 @@
                         <button class="btn-nav" onclick="window.location.href='/promotions'">PROMOTIONS</button>
                     </li>
                     <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/events'">EVENTS</button>
+                        <button class="btn-nav" onclick="window.location.href='/events'">CONTESTS & EVENTS</button>
                     </li>
-                    <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/pages/cornwall-guest-services'">GUEST SERVICES</button>
+                    <li class="dropdown">                        
+                        <button class="btn-nav" data-toggle="dropdown">GUEST SERVICES</button>
+                        <ul class="dropdown-menu" style="right:0px; left:auto;">                            
+                            <li>
+                                <a class="nav_a" href='/pages/lambton-guest-services' target='_self'><span>Guest Services</span></a>        
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/lambton-gift-cards' target='_self'><span>Gift Cards</span></a> 
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/lambton-what-s-new' target='_self'><span>What's New</span></a>
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/lambton-mall-walkers-club' target='_self'><span>Mall Walkers</span></a>        
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/lambton-in-the-community' target='_self'><span>In the Community</span></a>
+                            </li>
+                        </ul>
                     </li>            
                     <li>                        
                         <button class="btn-nav" onclick="window.location.href='/jobs'">CAREERS</button>
@@ -192,30 +203,24 @@
                                 <a class="nav_a" href='/hours' target='_self'><span>Shopping Hours</span></a>                                
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-leasing' target='_self'><span>Leasing</span></a>                                
+                                <a class="nav_a" href='/pages/lambton-leasing' target='_self'><span>Leasing</span></a>                                
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-mall-info' target='_self'><span>Mall Info</span></a>                              
+                                <a class="nav_a" href='/pages/lambton-mall-info' target='_self'><span>Mall Info</span></a>                              
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-accessibility' target='_self'><span>Accessibility</span></a>                      
+                                <a class="nav_a" href='/pages/lambton-mall-info' target='_self'><span>Mall Photos</span></a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-community-wifi' target='_self'><span>Community Relations</span></a>              
+                                <a class="nav_a" href='/pages/lambton-security' target='_self'><span>Security</span></a>                                
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-contact-us' target='_self'><span>Contact Us</span></a>                            
+                                <a class="nav_a" href='/pages/lambton-accessibility' target='_self'><span>Accessibility</span></a>                      
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-security' target='_self'><span>Security</span></a>                                
-                            </li>
-                            <li>
-                                <a class="nav_a" href='/pages/cornwall-parking-at-cornwall-centre' target='_self'><span>Parking Info</span> </a>        
+                                <a class="nav_a" href='/pages/lambton-contact-us' target='_self'><span>Contact Us</span></a>                            
                             </li>
                         </ul>
-                    </li>
-                    <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/posts'">BLOG</button>
                     </li>
                 </ul>
                 <hr>
@@ -333,16 +338,16 @@
                         <a href="" target="_blank">
                              <i class="fa fa-twitter social_icon" aria-hidden="true"></i>    
                         </a>
-		                <a href="//www.pinterest.com/cornwallcentre/" target="_blank">
+		                <a href="//www.pinterest.com/lambtoncentre/" target="_blank">
 		                    <i class="fa fa-pinterest social_icon" aria-hidden="true"></i>
 		                </a>
-		                <a href="//www.youtube.com/user/CornwallCentre" target="_blank">
+		                <a href="//www.youtube.com/user/lambtonCentre" target="_blank">
 		                    <i class="fa fa-youtube social_icon" aria-hidden="true"></i>
 	                    </a>
 		                <a href="//plus.google.com/113773191865855064312" target="_blank">
 		                    <i class="fa fa-google-plus-official social_icon" aria-hidden="true"></i>
 	                    </a>
-                        <a href="https://www.instagram.com/cornwallcentre/" target="_blank">
+                        <a href="https://www.instagram.com/lambtoncentre/" target="_blank">
                             <i class="fa fa-instagram social_icon" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -414,17 +419,12 @@
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/lambton-contact-us' target='_self'>Contact Us</a>
                             </div>
-                            <div class="nav_sitemap_item">
-                                <span class="site_map_title">
-                                    <a href="/posts">BLOG</a>
-                                </span>
-                            </div>
                         </div>
                     </div>
                     <div class="line_break hidden-xs"></div>
                     <div class="social_links hidden-xs">
     		            <span>
-    		                <a href="//www.pinterest.com/cornwallcentre/" target="_blank">
+    		                <a href="//www.pinterest.com/lambtoncentre/" target="_blank">
     		                    <i class="fa fa-pinterest social_icon" aria-hidden="true"></i>
     		                </a>
     		            </span>
