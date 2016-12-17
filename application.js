@@ -371,8 +371,8 @@ function renderPromotions(container, template, collection){
             val.image_url = "//www.mallmaverick.com/system/promotions/promo_images/000/044/401/original/13048118_1274157075931171_422779939573639497_o.jpg?1461607604";
         }
         
-        if(val.promo_image_url.indexOf('missing.png') > 0){
-            val.promo_image_url  = val.promo_image_url_abs;
+        if(val.promo_image_url_abs.indexOf('missing.png') > 0){
+            val.promo_image_url_abs  = "//www.mallmaverick.com/system/promotions/promo_images/000/044/401/original/13048118_1274157075931171_422779939573639497_o.jpg?1461607604";
         }
         
         var show_date = moment(val.show_on_web_date);
