@@ -304,12 +304,12 @@ legend{
 }
 
 
-#site_nav ul{
-    position:absolute;
-    top: 8px;
+#site_nav ul {
+    position: absolute;
+    top: 42px;
     right: 0;
-    margin-left:0px;
-    list-style:none;
+    margin-left: 0px;
+    list-style: none;
 }
 
 #site_nav li{    
