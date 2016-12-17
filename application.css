@@ -759,7 +759,8 @@ a.btn-nav {
     
 }
 
-#centre_logo{
+#centre_logo {
+    max-width: 95%;
     float: left;
     height: auto;
     padding-bottom: 10px;
