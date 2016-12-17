@@ -760,7 +760,6 @@ a.btn-nav {
 }
 
 #centre_logo {
-    max-width: 95%;
     float: left;
     height: auto;
     padding-bottom: 10px;
@@ -769,6 +768,9 @@ a.btn-nav {
     top: -36px;
 }
 
+#centre_logo img {
+    max-width: 95%;    
+}
 
 .line_break{
     clear:both;
