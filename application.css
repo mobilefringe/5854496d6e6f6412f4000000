@@ -2155,7 +2155,9 @@ body {
 .feature_label{
     background-color: #000;
 }
-
+.check_hours {
+    color: #000;
+}
 .stores_table_headers{
     background-color: #000;
 }
