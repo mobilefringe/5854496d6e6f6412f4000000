@@ -368,11 +368,11 @@ function renderPromotions(container, template, collection){
         }
         else{
             val.store_name = "Lambton Mall";
-            val.image_url = "//www.mallmaverick.com/system/promotions/promo_images/000/044/401/original/13048118_1274157075931171_422779939573639497_o.jpg?1461607604";
+            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/025/original/Untitled-4_copy.png?1397571343";
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-            val.promo_image_url_abs  = "//www.mallmaverick.com/system/promotions/promo_images/000/044/401/original/13048118_1274157075931171_422779939573639497_o.jpg?1461607604";
+            val.promo_image_url_abs  = "//www.mallmaverick.com/system/sites/logo_images/000/000/025/original/Untitled-4_copy.png?1397571343";
         }
         
         var show_date = moment(val.show_on_web_date);
