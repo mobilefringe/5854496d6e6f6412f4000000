@@ -116,8 +116,8 @@
             renderStoreDetails("#store_details_container","#store_details_template", store_details, slug);
             renderStoreDetails("#map_container","#map_template", store_details, slug);
             
-            var store_promo_ids = store_details.promotions
-            var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
+            var store_promo_ids = store_details.promotions;
+            var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date }).reverse();
             var published_promos = [];
             $.each( store_promos , function( key, val ){
                 today = moment();
