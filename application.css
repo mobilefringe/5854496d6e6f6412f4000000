@@ -600,9 +600,14 @@ legend{
     padding: 10px 25px;
 }
 
-.stores_table_headers{
+.stores_table_headers {
+    padding-top: 6px;
+    padding-left: 12px;
+    height: 36px;
+    text-align: left;
+    font-size: 14pt;
 	background-color: black;
-	color:white;
+	color: white;
 }
 
 .stores_table_headers .pull-right {
