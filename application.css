@@ -665,6 +665,7 @@ legend{
 
 .store_list .tabbable{
     position: relative;
+    background: #fff;
 }
 
 .store_list .stores_row img{
