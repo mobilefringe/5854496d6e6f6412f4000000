@@ -2164,6 +2164,9 @@ body {
 .check_hours:hover {
     color: #000;
 }
+.alphabet_bg {
+    background-color: transparent;
+}
 .stores_table_headers{
     background-color: #000;
 }
