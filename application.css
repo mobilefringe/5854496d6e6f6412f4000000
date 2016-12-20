@@ -5,6 +5,12 @@
     height: 474px;
 }
 
+.homepop_up_container {
+    background-size: 260px !important;
+    background-repeat: no-repeat !important;
+    background-color: #fff !important;
+    background-position: 280px !important;
+}
 .pop_up_container{
     width:550px; 
     height: 474px; 
