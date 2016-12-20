@@ -349,13 +349,15 @@ legend{
 #site_nav ul.dropdown-menu li{
     width: 100%;
     display: block;
-    font-size: 11pt;
 }
+
 #site_nav ul.dropdown-menu>li>a {
     margin: 3px;
 }
 #site_nav ul.dropdown-menu>li>a>span {
    font-size: 11pt; 
+   font-weight: normal;
+   font-family: verdana, arial, helvetica, sans-serif;
 }
 .hours_bottom_nav{
 	border-top-color: #DEDEDE; 
