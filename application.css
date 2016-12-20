@@ -353,6 +353,7 @@ legend{
 }
 #site_nav ul.dropdown-menu>li>a {
     margin: 3px;
+    font-size: 11pt;
 }
 .hours_bottom_nav{
 	border-top-color: #DEDEDE; 
