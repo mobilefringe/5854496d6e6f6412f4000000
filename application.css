@@ -1614,6 +1614,9 @@ td.stores_pin{
 .page_body .flexslider .slides {
     margin: 0;
 }
+.page_body .flexslider .slides img {
+    height: 249px;
+}
 /********* simply-scroll-list *********/
 .simply-scroll{
     height:auto;
