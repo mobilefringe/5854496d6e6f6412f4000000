@@ -1606,6 +1606,14 @@ td.stores_pin{
     width: auto;
     height: auto;
 }
+
+.page_body .flexslider {
+    margin: 0;
+    height: 249px;
+}
+.page_body .flexslider .slides {
+    margin: 0;
+}
 /********* simply-scroll-list *********/
 .simply-scroll{
     height:auto;
