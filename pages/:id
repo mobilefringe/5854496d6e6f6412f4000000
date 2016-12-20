@@ -38,6 +38,10 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+            
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var pages_json = "//www.lambtonmall.com/pages/" + slug + ".json"
@@ -59,9 +63,7 @@
                 }
             }); 
             
-            $('.flexslider').flexslider({
-                animation: "slide"
-            });
+            
         }
         loadMallDataCached(renderAll); 
     })
