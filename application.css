@@ -349,6 +349,7 @@ legend{
 #site_nav ul.dropdown-menu li{
     width: 100%;
     display: block;
+    font-size: 11pt;
 }
 #site_nav ul.dropdown-menu>li>a {
     margin: 3px;
