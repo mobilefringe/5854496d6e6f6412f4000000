@@ -137,7 +137,7 @@
                             <a href='/pages/lambton-mall-info'>Mall Info</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/lambton-mall-info'>Mall Photos</a>
+                            <a href='/pages/lambton-mall-photos'>Mall Photos</a>
                         </li>
                         <li class="mobile_menu_item">
                           <a href='/pages/lambton-security'>Security</a>
@@ -234,7 +234,7 @@
                                 <a class="nav_a" href='/pages/lambton-mall-info' target='_self'><span>Mall Info</span></a>                              
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/lambton-mall-info' target='_self'><span>Mall Photos</span></a>
+                                <a class="nav_a" href='/pages/lambton-mall-photos' target='_self'><span>Mall Photos</span></a>
                             </li>
                             <li>
                                 <a class="nav_a" href='/pages/lambton-security' target='_self'><span>Security</span></a>                                
