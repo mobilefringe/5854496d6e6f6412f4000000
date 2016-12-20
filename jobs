@@ -1,7 +1,7 @@
 <div>
     <h1 class="page_title">Careers</h1>
     <hr>
-    
+    <h3 id="no_jobs" class="hidden_now">There are currently no jobs available, please check back again later.</h3>
     <div class="accordion" id="accordion2">
         <div id="mall_jobs_container">
             <script id="mall_jobs_template" type="x-tmpl-mustache/text">
@@ -66,10 +66,6 @@
             </script>
         </div>
     </div>
-    
-    <div class="col-md-12">
-        <h3 id="no_jobs" class="hidden_now">There are currently no jobs available, please check back again later.</h3>
-    </div>
 </div>
 <script>
     $(document).ready(function(e){
@@ -95,7 +91,7 @@
                     val.store_name = getStoreDetailsByID(val.jobable_id).name;
                 }
             });
-            if(mall_published_jobs.length > 0 || store_published_jobs.length > 0 ){
+            if(mall_published_jobs.length > 20 || store_published_jobs.length > 0 ){
                 renderJobs('#mall_jobs_container', '#mall_jobs_template', mall_published_jobs);
                 var sorted_store_jobs = store_published_jobs.sortBy(function(o){ return o.store_name});
                 renderJobs('#store_jobs_container', '#store_jobs_template', sorted_store_jobs);
