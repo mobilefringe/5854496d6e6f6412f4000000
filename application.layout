@@ -69,14 +69,14 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <div class="mfp-bg mfp-ready"></div>
-    <div class="homepop_up_container hidden-now">
-        <div class="pop_up_form_container">
-            <div class="pop_up_form">
+    <!--<div class="mfp-bg mfp-ready"></div>-->
+    <!--<div class="homepop_up_container hidden-now">-->
+    <!--    <div class="pop_up_form_container">-->
+    <!--        <div class="pop_up_form">-->
                 
-            </div>
-        </div>
-    </div>
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
     <header>
         <!--Header -->
         <div class="header">
