@@ -9,8 +9,28 @@
     <div id="contact_us" class="hidden_now">
         <iframe class="hidden-xs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4271205088758!2d-104.61311968435663!3d50.45177059515088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e468602b3cd%3A0x599e8052c78d38d9!2sCornwall+Centre!5e0!3m2!1sen!2sca!4v1481653018142" width="100%" height="405" frameborder="0" style="border:0" allowfullscreen></iframe>
         <iframe class="visible-xs-inline-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4271205088758!2d-104.61311968435663!3d50.45177059515088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e468602b3cd%3A0x599e8052c78d38d9!2sCornwall+Centre!5e0!3m2!1sen!2sca!4v1481653018142" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div sylte="clear:both;">&nbsp;</div>    
+        <div sylte="clear:both;"></div>    
     </div>
+    
+    <section class="lookbook hidden_now">
+        <div class="flexslider">
+            <ul class="slides" id="lookbook_slider">
+                <script id="lookbook_slider_template" type="x-tmpl-mustache/text">
+                    <li>
+                        <img src="//mallmaverick.com/{{photo_url}}" alt="Lookbook Image" class ="gallery_image"/>
+                        <div class="lookbook_container"> 
+                            {{#name}}
+                            <h1 class="lookbook_header">{{name}}</h1>
+                            <p class="lookbook_description">{{description}}</p>
+                            {{/name}}
+                        </div>
+                    </li>
+                </script>
+            </ul>
+        </div>
+        <link rel="stylesheet" href="http://lambtonmall.mallmaverick.com/css/gallery/css3_3d.css">
+    </section>
+    
     <div id="page_body"></div>
 </div>
 <div class="mobile_line_break"></div>
@@ -27,11 +47,20 @@
                 if(slug === "cornwall-contact-us") {
                     $("#contact_us").show();
                 }
+                if(slug === "lambton-mall-photos"){
+                    var lookbook_images = getRepoDetailsByName("mall-photos");
+                    renderGeneral("#lookbook_slider", "#lookbook_slider_template", lookbook_images);
+                    $(".lookbook").show();
+                }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#error_msg").fadeIn("fast");
                 }
             }); 
+            
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
         }
         loadMallDataCached(renderAll); 
     })
