@@ -69,6 +69,14 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
+    <div class="mfp-bg mfp-ready"></div>
+    <div class="homepop_up_container">
+        <div class="pop_up_form_container">
+            <div class="pop_up_form">
+                
+            </div>
+        </div>
+    </div>
     <div class="popup_bg hidden_now">    
         <div class="popup_newsletter" style="padding-bottom: 15px;padding-right: 25px;padding-left: 25px;">
             <a href="javascript:close_popup();" class="popup_close">X</a>
