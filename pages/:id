@@ -43,7 +43,7 @@
             $.getJSON(pages_json).done(function(data) {
                 $('#page_title').html(data.title);
                 $('#page_body').html(data.body);
-                if(slug === "cornwall-contact-us") {
+                if(slug === "lambton-contact-us") {
                     $("#contact_us").show();
                 }
                 if(slug === "lambton-mall-photos"){
