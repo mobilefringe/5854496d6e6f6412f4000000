@@ -70,35 +70,11 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="mfp-bg mfp-ready"></div>
-    <div class="homepop_up_container">
+    <div class="homepop_up_container hidden-now">
         <div class="pop_up_form_container">
             <div class="pop_up_form">
                 
             </div>
-        </div>
-    </div>
-    <div class="popup_bg hidden_now">    
-        <div class="popup_newsletter" style="padding-bottom: 15px;padding-right: 25px;padding-left: 25px;">
-            <a href="javascript:close_popup();" class="popup_close">X</a>
-            <h1>INSCRIVEZ-VOUS<br>À NOTRE<br>INFOLETTRE</h1>
-            <p>Inscrivez-vous pour ne rien manquer des offres exclusives, promotions, événements et autres concours tout aussi excitants!</p>
-            
-            <div class="subscribe">
-                <input title="PRÉNOM" type="text" placeholder="PRÉNOM" id="subscribe_first_name">
-                <input title="NOM" type="text" placeholder="NOM" id="subscribe_last_name">                            
-                <input title="COURRIEL" type="text" placeholder="COURRIEL" id="subscribe_email_popup">
-                    
-                <a href="javascript:subscribe_email_popup();" class="btn"> 
-                    <img alt="popup image" id="subscribe_letter_btn_img" src="{{1876 | get_image_url}}" /> 
-                </a>
-                
-                <span id="success_subscribe_popup">Merci de votre inscription!</span>
-                
-                <p style="display: block;padding-right: 0px;padding-top: 10px;">
-                    <input title="checkbox " type="checkbox" id="hide_popup" />
-                    Ne plus afficher ce message aujourd'hui
-                </p>
-            </div>        
         </div>
     </div>
     <header>
