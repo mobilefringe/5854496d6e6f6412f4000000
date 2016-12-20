@@ -38,10 +38,6 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            $('.flexslider').flexslider({
-                animation: "slide"
-            });
-            
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var pages_json = "//www.lambtonmall.com/pages/" + slug + ".json"
@@ -52,9 +48,6 @@
                     $("#contact_us").show();
                 }
                 if(slug === "lambton-mall-photos"){
-                    var lookbook_images = getRepoDetailsByName("mall-photos").images;
-                    console.log(lookbook_images);
-                    renderGeneral("#lookbook_slider", "#lookbook_slider_template", lookbook_images);
                     $(".lookbook").show();
                 }
             }).fail(function(jqXHR) {
@@ -63,7 +56,12 @@
                 }
             }); 
             
-            
+            var lookbook_images = getRepoDetailsByName("mall-photos").images;
+            console.log(lookbook_images);
+            renderGeneral("#lookbook_slider", "#lookbook_slider_template", lookbook_images);
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
         }
         loadMallDataCached(renderAll); 
     })
