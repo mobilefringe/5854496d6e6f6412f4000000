@@ -61,7 +61,6 @@
             }); 
             
             var lookbook_images = getRepoDetailsByName("mall-photos").images;
-            console.log(lookbook_images);
             renderGeneral("#lookbook_slider", "#lookbook_slider_template", lookbook_images);
             $('.flexslider').flexslider({
                 animation: "slide"
