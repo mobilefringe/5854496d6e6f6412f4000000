@@ -22,9 +22,10 @@
                     <input class="btn btn-success" value = "Submit" type="submit">
                 </form>
             </div>
-        </div>                
+        </div>  
+        <img src="#" alt="pop up" />
     </div>
-    <img src="#" alt="pop up" />
+    
     <i class="fa fa-remove close_popup"></i>
 </div>
 
