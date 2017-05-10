@@ -24,6 +24,7 @@
             </div>
         </div>                
     </div>
+    <i class="fa fa-remove close_popup"></i>
 </div>
 
 <div class="flexslider trim_screen">
