@@ -23,6 +23,9 @@
     transform: translate(-25%, -25%);
     background: #fff;
 }
+.popup_home img {
+    max-width: 100%;
+}
 .pop_up_container{
     width:550px; 
     height: 474px; 
