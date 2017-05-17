@@ -1,31 +1,31 @@
 <div class="popup_home hidden_now">
-    
     <div class="homepop_up_container">
         <div class="pop_up_form_container">
             <div class="pop_up_form">
                 <h4 class="popup_header1">JOIN OUR NEWSLETTER</h4>
-                <form method="post" action ="http://mobilefringe.createsend.com/t/d/s/ykblk/"  onsubmit="return validate_pop_up()">
+                <form action=http://mobilefringe.createsend.com/t/d/s/ykblk/ method="post" id="subForm">
                     <label for="name_pop_up">Name</label>
                     <input id="name_pop_up" type="text" name=cm-name>
                     
-                    <label for="email_pop_up">Email</label>
-                    <input id="email_pop_up" type="text" name=cm-ykblk-ykblk>
+                    <label for="fieldEmail">Email*</label>
+                    <input id="fieldEmail" name=cm-ykblk-ykblk type="email" required placeholder="Your Email" />  
                     
                     <label for="postal_pop_up" >Postal Code</label>
                     <input id="postal_pop_up" type="text" name=cm-f-ydcyu>
                     
                     <label>
-                        <input id="subscribe_newsletter_popup" type="checkbox">
-                        Subscribe to receive newsletters from Lambton Mall
+                        <label style="display:none" for="agree_terms">Subscribe</label>
+                        <input type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Lambton Mall
                     </label>
                     <br/> 
-                    <input class="btn btn-success" value = "Submit" type="submit">
+                    <button class="btn btn-success"/>Subscribe</button>                      
+                    <br />
+                    <span id="success_subscribe">Thank you for subscribing to our newsletter.</span>
                 </form>
             </div>
         </div>  
         <img src="#" alt="pop up" />
     </div>
-    
     <i class="fa fa-remove close_popup"></i>
 </div>
 
@@ -75,5 +75,5 @@
             });
         }
         loadMallData(renderAll);
-    })
+    });
 </script>
