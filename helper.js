@@ -1,5 +1,5 @@
 function init() {
-    $('<div class="modal-backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
+    $('<div class="modal-backdrop loader-backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
     
     $("#brand_select").on('change', function() {            
         if ($(this).val() != ""){
