@@ -68,8 +68,8 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        init();
+    $(document).ready(function(e){
+        init(e);
         
         function renderAll(){
             var jobs = getJobsList();
