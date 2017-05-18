@@ -58,8 +58,8 @@ function init() {
 }
 
 function show_content(){
-    $(".loading_backdrop").remove();
     $('.yield').fadeIn();
+    $(".loading_backdrop").remove();
     
     var header_stores = getStoresList();
     renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
