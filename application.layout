@@ -56,7 +56,7 @@
     <script src="/application.js" type="text/javascript"></script>
 
     <script>
-        setEndPoint('//lambton.mallmaverick.com/api/v3/lambton/all.json');
+        // setEndPoint('//lambton.mallmaverick.com/api/v3/lambton/all.json');
         setEndPoint('//twinpines.mallmaverick.com/api/v3/twinpines/all.json');
     </script>
 </head>
