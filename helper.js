@@ -74,5 +74,5 @@ function init() {
 
 function show_content(){
     $('.yield').fadeIn();
-    $(".modal-backdrop").remove();
+    $(".modal-backdrop").detach();
 }
