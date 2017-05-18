@@ -69,8 +69,9 @@
 </div>
 <script>
     $(document).ready(function(){
+        init();
+        
         function renderAll(){
-            init();
             var jobs = getJobsList();
             var mall_published_jobs = [];
             var store_published_jobs = [];
@@ -98,6 +99,8 @@
             else {
                 $('#no_jobs').show();
             }
+            
+            show_content();
         }
         loadMallDataCached(renderAll); 
     })
