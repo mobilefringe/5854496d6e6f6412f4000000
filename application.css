@@ -105,6 +105,10 @@
 }
 
 /* *** LOADER *** */
+.loader-backdrop {
+    background: #0b0b0b;
+    opacity: 0.6;
+}
 .loader {
   margin: 100px auto;
   font-size: 25px;
