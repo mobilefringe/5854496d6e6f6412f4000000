@@ -1,4 +1,4 @@
-function init() {
+function init(e) {
     $('<div class="loading_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
     
     $("#brand_select").on('change', function() {            
