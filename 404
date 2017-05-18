@@ -4,6 +4,9 @@
 </div>
 <script>
     $(document).ready(function(){
-        init();
-    })
+        function renderAll(){
+            init();
+        }
+        loadMallDataCached(renderAll); 
+    });
 </script>
