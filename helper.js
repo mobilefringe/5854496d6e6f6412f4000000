@@ -75,5 +75,4 @@ function init() {
 function show_content(){
     $(".loading_backdrop").remove();
     $('.yield').fadeIn();
-    
 }
