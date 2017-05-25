@@ -4,7 +4,7 @@
         <div class="pop_up_form_container">
             <div class="pop_up_form">
                 <h4 class="popup_header1">JOIN OUR NEWSLETTER</h4>
-                <form action=http://mobilefringe.createsend.com/t/d/s/ykblk/ method="post" id="subForm">
+                <form action=http://mobilefringe.createsend.com/t/d/s/ykblk/ method="post" id="popupForm">
                     <label for="name_pop_up">Name</label>
                     <input id="name_pop_up" type="text" name=cm-name>
                     
@@ -15,8 +15,8 @@
                     <input id="postal_pop_up" type="text" name=cm-f-ydcyu>
                     
                     <label>
-                        <label style="display:none" for="agree_terms">Subscribe</label>
-                        <input type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Lambton Mall
+                        <label style="display:none" for="agree">Subscribe</label>
+                        <input type="checkbox" class="info_check" id="agree"/> I agree to receive newsletters from Lambton Mall
                     </label>
                     <br/> 
                     <button class="btn btn-success"/>Subscribe</button>                      
@@ -25,7 +25,6 @@
                 </form>
             </div>
         </div>  
-        <!--<img src="#" alt="pop up" />-->
     </div>
     <i class="fa fa-remove close_popup"></i>
 </div>
