@@ -2242,7 +2242,7 @@ td.stores_pin{
 /* ***Property CSS *** */
 /* #2F3790 */
 body {
-    background-image: url(//mallmaverick.com/system/site_images/photos/000/002/267/original/background2.png?1397075174);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497198202000/background2.png);
     background-attachment: fixed;
 }
 
@@ -2262,14 +2262,15 @@ body {
 }
 @media (max-width: 800px) {
     body{
-        background-image: url(/system/site_images/photos/000/003/148/original/bluetile.png?1405543516);    
+        background-image: url(//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497198407000/bluetile.png);    
     }
 }
 .top_nav{
-    background: url(/system/site_images/photos/000/002/266/original/background_texture.jpg?1397075141) repeat ;
+    background: url(//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/jpeg/1497198496000/background_texture.jpg) repeat ;
 }
 
-.header { background: url(/system/site_images/photos/000/002/266/original/background_texture.jpg?1397075141) repeat ;
+.header { 
+    background: url(//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/jpeg/1497198496000/background_texture.jpg) repeat ;
 }
 .brand_nav{
     background-color: #000;
