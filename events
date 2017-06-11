@@ -39,7 +39,6 @@ $(document).ready(function(e){
                 published_events.push(val);
             } 
         });
-        console.log(published_events);
         if(published_events.length > 0){
             renderEvents("#events_container","#events_template", published_events);
         }
