@@ -198,7 +198,7 @@ a, a:focus, a:hover {
     position:relative;
 }
 .yield {
-    display: none;
+    visibility: hidden;
 }
 .top_nav{
     background-image:url(PRIMARY_NAV_IMAGE);
