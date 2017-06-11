@@ -1,5 +1,5 @@
 function init(e) {
-    $('<div class="loading_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
+    $('<div class="loader_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
     
     $("#brand_select").on('change', function() {            
         if ($(this).val() != ""){
@@ -79,8 +79,8 @@ function init(e) {
 }
 
 function show_content(){
-    $('.yield').fadeIn();
-    $(".loading_backdrop").remove();
+    $(".yield").css({visibility: "visible"});
+    $(".loader_backdrop").remove();
     
     var header_stores = getStoresList();
     renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
