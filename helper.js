@@ -84,7 +84,7 @@ function show_content(){
     
     var header_stores = getStoresList();
     renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
-    $("#brand_select").prepend("<option disabled selected>Brands</option>");
+    $("#brand_select").prepend("<option selected>Brands</option>");
     
     renderHomeHours();
     
