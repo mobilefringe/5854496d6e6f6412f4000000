@@ -70,7 +70,7 @@ $(document).ready(function(e){
                     }
                     $('.popup_home a').attr('href', popup.photo_link)
                     $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
-                    $('<div class="modal-backdrop"></div>').appendTo(document.body);
+                    $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
                     $('.popup_home').show()
                 }
             }
