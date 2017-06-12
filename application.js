@@ -246,8 +246,8 @@ function renderEvents(container, template, collection){
         }
         else {
             val.store_name = "Lambton Mall";
-            val.event_image_url = val.logo;
         }
+        
         if(val.event_image_url.indexOf('missing.png') < 0){
             val.event_image_url = val.logo;
         }
