@@ -249,8 +249,7 @@ function renderEvents(container, template, collection){
         }
         
         if(val.event_image_url.indexOf('missing.png') > 0){
-            val.event_image_url_abs = val.logo;
-            console.log(val.logo)
+            val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497285560000/lambton_logo.png";
         }
         // else{
         //     if(val.image_url.indexOf('missing.png') < 0){
@@ -331,11 +330,11 @@ function renderPromotions(container, template, collection){
         }
         else{
             val.store_name = "Lambton Mall";
-            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/025/original/Untitled-4_copy.png?1397571343";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497285560000/lambton_logo.png";
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-            val.promo_image_url_abs  = "//www.mallmaverick.com/system/sites/logo_images/000/000/025/original/Untitled-4_copy.png?1397571343";
+            val.promo_image_url_abs  = "//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497285560000/lambton_logo.png";
         }
         
         var show_date = moment(val.show_on_web_date);
