@@ -251,14 +251,7 @@ function renderEvents(container, template, collection){
         if(val.event_image_url.indexOf('missing.png') > 0){
             val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497285560000/lambton_logo.png";
         }
-        // else{
-        //     if(val.image_url.indexOf('missing.png') < 0){
-        //         val.logo = val.image_url;
-        //     }
-        //     else{
-        //         val.logo = "";
-        //     }
-        // }
+        
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
@@ -294,7 +287,7 @@ function renderEventDetails(container, template, collection){
         }
         else{
             val.store_name = "Lambton Mall";
-            val.image_url = "";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497285560000/lambton_logo.png";
         }
         
         if(val.event_image_url_abs.indexOf('missing.png') > -1){
