@@ -249,7 +249,7 @@ function renderEvents(container, template, collection){
         }
         
         if(val.event_image_url.indexOf('missing.png') > 0){
-            val.event_image_url = val.logo;
+            val.event_image_url_abs = val.logo;
         }
         // else{
         //     if(val.image_url.indexOf('missing.png') < 0){
