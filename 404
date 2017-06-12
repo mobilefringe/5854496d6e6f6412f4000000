@@ -3,10 +3,13 @@
     <p>You may have mistyped the address or the page may have moved.</p>    
 </div>
 <script>
-    $(document).ready(function(){
-        function renderAll(){
-            init();
-        }
-        loadMallDataCached(renderAll); 
-    });
+$(document).ready(function(e){
+    init(e);
+    function renderAll(){
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    loadMallDataCached(renderAll); 
+});
 </script>
