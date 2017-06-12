@@ -6,7 +6,7 @@
             <div class="row store_promo">
                 <div class="col-sm-3">
                     <a  href="{{event_image_url_abs}}" data-lightbox="{{name}}">
-                        <img src="{{event_image_url}}">
+                        <img src="{{event_image_url_abs}}">
                     </a>
                 </div>
                 <div class="col-sm-9">
@@ -30,7 +30,7 @@ $(document).ready(function(e){
     init(e);
     function renderAll(){
         var events = getEventsList().sortBy(function(o){ return o.start_date });
-        console.log(events);
+        console.log(events)
         var published_events = [];
         $.each(events, function(key, val){
             today = moment();
