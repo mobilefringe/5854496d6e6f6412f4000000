@@ -393,6 +393,7 @@ function renderStoreList(container, template, collection, type){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     var store_initial="";
+    console.log(collection);
     // $.each( collection , function( key, val ) {
     //     if (type == "stores" || type == "category_stores"){
     //         if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
