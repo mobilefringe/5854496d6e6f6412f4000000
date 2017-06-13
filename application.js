@@ -396,57 +396,57 @@ function renderStoreList(container, template, collection, type){
     let stores = collection;
     //$.each( collection , function( key, val ) {
     
-    // for (var i = 0, len = stores.length; i < len; i++) {
-    //     let store = stores[i];
-    //     if (type == "stores" || type == "category_stores"){
-    //         if(!store.store_front_url ||  store.store_front_url.indexOf('missing.png') > -1 || store.store_front_url.length === 0){
-    //             store.alt_store_front_url = "";
-    //         } else {
-    //             store.alt_store_front_url = getImageURL(val.store_front_url);    
-    //         }
-    //     }
-    //     //var categories = getStoreCategories();
-    //     let current_initial = store.name[0];
-    //     store.cat_list = store.categories.join(',')
-    //     if(store_initial.toLowerCase() == current_initial.toLowerCase()){
-    //         store.initial = "";
-    //         store.show = "display:none;";
-    //     }
-    //     else{
-    //         store.initial = current_initial;
-    //         store_initial = current_initial;
-    //         store.show = "display:block;";
-    //     }
-    //     if(store.is_coming_soon_store == true){
-    //         store.coming_soon_store = "display:inline";
-    //     }
-    //     else{
-    //         store.coming_soon_store = "display:none";
-    //     }
-    //     if(store.is_new_store == true){
-    //         store.new_store = "display:inline";
-    //     }
-    //     else{
-    //         store.new_store = "display:none";
-    //     }
-    //     if (store.promotions.length > 0){
-    //         store.promotion_exist = "display:inline";
-    //         var store_promo = getPromotionsForIds(store.promotions).sortBy(function(o){ return o.start_date })[0];
-    //         if (store_promo != undefined){
-    //             store.promo_btn = "/promotions/" + store_promo.slug;
-    //         }
-    //     }
-    //     else{
-    //         store.promotion_exist = "display:none";
-    //     }
-    //     if(store.phone.length < 1){
-    //         store.phone_exist = "display:none";
-    //     }
-    //     store.block = current_initial + '-block';
-    //     //let rendered = Mustache.render(template_html,store);
-    //     var upper_current_initial = current_initial.toUpperCase();
-    //     //item_rendered.push(rendered);
-    // }
+    stores.map(stores => {
+        let store = stores[i];
+        if (type == "stores" || type == "category_stores"){
+            if(!store.store_front_url ||  store.store_front_url.indexOf('missing.png') > -1 || store.store_front_url.length === 0){
+                store.alt_store_front_url = "";
+            } else {
+                store.alt_store_front_url = getImageURL(val.store_front_url);    
+            }
+        }
+        //var categories = getStoreCategories();
+        let current_initial = store.name[0];
+        store.cat_list = store.categories.join(',')
+        if(store_initial.toLowerCase() == current_initial.toLowerCase()){
+            store.initial = "";
+            store.show = "display:none;";
+        }
+        else{
+            store.initial = current_initial;
+            store_initial = current_initial;
+            store.show = "display:block;";
+        }
+        if(store.is_coming_soon_store == true){
+            store.coming_soon_store = "display:inline";
+        }
+        else{
+            store.coming_soon_store = "display:none";
+        }
+        if(store.is_new_store == true){
+            store.new_store = "display:inline";
+        }
+        else{
+            store.new_store = "display:none";
+        }
+        // if (store.promotions.length > 0){
+        //     store.promotion_exist = "display:inline";
+        //     var store_promo = getPromotionsForIds(store.promotions).sortBy(function(o){ return o.start_date })[0];
+        //     if (store_promo != undefined){
+        //         store.promo_btn = "/promotions/" + store_promo.slug;
+        //     }
+        // }
+        // else{
+        //     store.promotion_exist = "display:none";
+        // }
+        if(store.phone.length < 1){
+            store.phone_exist = "display:none";
+        }
+        store.block = current_initial + '-block';
+        //let rendered = Mustache.render(template_html,store);
+        var upper_current_initial = current_initial.toUpperCase();
+        //item_rendered.push(rendered);
+    });
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
