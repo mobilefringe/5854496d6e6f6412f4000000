@@ -396,7 +396,8 @@ function renderStoreList(container, template, collection, type){
     let stores = collection;
     //$.each( collection , function( key, val ) {
     
-    stores.map(store => {
+    for (var i = 0, len = stores.length; i < len; i++) {
+        let store = stores[i];
         if (type == "stores" || type == "category_stores"){
             if(!store.store_front_url ||  store.store_front_url.indexOf('missing.png') > -1 || store.store_front_url.length === 0){
                 store.alt_store_front_url = "";
@@ -442,10 +443,10 @@ function renderStoreList(container, template, collection, type){
             store.phone_exist = "display:none";
         }
         store.block = current_initial + '-block';
-        let rendered = Mustache.render(template_html,store);
+        //let rendered = Mustache.render(template_html,store);
         var upper_current_initial = current_initial.toUpperCase();
-        item_rendered.push(rendered);
-    });
+        //item_rendered.push(rendered);
+    }
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
