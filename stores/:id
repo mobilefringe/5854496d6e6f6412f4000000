@@ -18,11 +18,11 @@
             <div class="row-fluid">
                 <h1 class="store_page">
                     <a href="/stores" class="back_to">
-                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/769/original/back_btn.png?1381264220" />
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497369767000/back_btn.png" />
                     </a>
                     {{name}} 
                     <a href="#promo" class="pull-right" id="promo">
-                        <img src="//www.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332" />
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497038419000/btn_promo.png"/>
                     </a>
                     <a href="#job" class="pull-right" id="job">
                         <img src="//www.mallmaverick.com/system/site_images/photos/000/000/770/original/btn_job.png?1381264320" />
