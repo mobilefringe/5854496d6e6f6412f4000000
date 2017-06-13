@@ -396,7 +396,7 @@ function renderStoreList(container, template, collection, type){
     let stores = collection;
     //$.each( collection , function( key, val ) {
     
-    stores.map(stores => {
+    stores.map(store => {
         if (type == "stores" || type == "category_stores"){
             if(!store.store_front_url ||  store.store_front_url.indexOf('missing.png') > -1 || store.store_front_url.length === 0){
                 store.alt_store_front_url = "";
