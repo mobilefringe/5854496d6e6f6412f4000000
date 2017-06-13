@@ -443,9 +443,9 @@ function renderStoreList(container, template, collection, type){
             store.phone_exist = "display:none";
         }
         store.block = current_initial + '-block';
-        let rendered = Mustache.render(template_html,store);
+        //let rendered = Mustache.render(template_html,store);
         var upper_current_initial = current_initial.toUpperCase();
-        item_rendered.push(rendered);
+        //item_rendered.push(rendered);
     }
     $(container).show();
     $(container).html(item_rendered.join(''));
