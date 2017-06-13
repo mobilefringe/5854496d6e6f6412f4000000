@@ -455,7 +455,7 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//www.mallmaverick.com/photos/original/missing.png";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497285560000/lambton_logo.png";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
