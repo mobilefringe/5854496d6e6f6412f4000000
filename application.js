@@ -392,58 +392,60 @@ function renderStoreList(container, template, collection, type){
     var item_rendered = [];
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
-    var store_initial="";
+    let store_initial="";
     let stores = collection;
-    // $.each( collection , function( key, val ) {
-    //     if (type == "stores" || type == "category_stores"){
-    //         if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-    //             val.alt_store_front_url = "";
-    //         } else {
-    //             val.alt_store_front_url = getImageURL(val.store_front_url);    
-    //         }
-    //     }
-    //     //var categories = getStoreCategories();
-    //     var current_initial = val.name[0];
-    //     val.cat_list = val.categories.join(',')
-    //     if(store_initial.toLowerCase() == current_initial.toLowerCase()){
-    //         val.initial = "";
-    //         val.show = "display:none;";
-    //     }
-    //     else{
-    //         val.initial = current_initial;
-    //         store_initial = current_initial;
-    //         val.show = "display:block;";
-    //     }
-    //     if(val.is_coming_soon_store == true){
-    //         val.coming_soon_store = "display:inline";
-    //     }
-    //     else{
-    //         val.coming_soon_store = "display:none";
-    //     }
-    //     if(val.is_new_store == true){
-    //         val.new_store = "display:inline";
-    //     }
-    //     else{
-    //         val.new_store = "display:none";
-    //     }
-    //     if (val.promotions.length > 0){
-    //         val.promotion_exist = "display:inline";
-    //         var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
-    //         if (store_promo != undefined){
-    //             val.promo_btn = "/promotions/" + store_promo.slug;
-    //         }
-    //     }
-    //     else{
-    //         val.promotion_exist = "display:none";
-    //     }
-    //     if(val.phone.length < 1){
-    //         val.phone_exist = "display:none";
-    //     }
-    //     val.block = current_initial + '-block';
-    //     var rendered = Mustache.render(template_html,val);
-    //     var upper_current_initial = current_initial.toUpperCase();
-    //     item_rendered.push(rendered);
-    // });
+    //$.each( collection , function( key, val ) {
+    
+    stores.map(store => {
+        if (type == "stores" || type == "category_stores"){
+            if(!store.store_front_url ||  store.store_front_url.indexOf('missing.png') > -1 || store.store_front_url.length === 0){
+                store.alt_store_front_url = "";
+            } else {
+                store.alt_store_front_url = getImageURL(val.store_front_url);    
+            }
+        }
+        //var categories = getStoreCategories();
+        let current_initial = store.name[0];
+        store.cat_list = store.categories.join(',')
+        if(store_initial.toLowerCase() == current_initial.toLowerCase()){
+            store.initial = "";
+            store.show = "display:none;";
+        }
+        else{
+            store.initial = current_initial;
+            store_initial = current_initial;
+            store.show = "display:block;";
+        }
+        if(store.is_coming_soon_store == true){
+            store.coming_soon_store = "display:inline";
+        }
+        else{
+            store.coming_soon_store = "display:none";
+        }
+        if(store.is_new_store == true){
+            store.new_store = "display:inline";
+        }
+        else{
+            store.new_store = "display:none";
+        }
+        if (store.promotions.length > 0){
+            store.promotion_exist = "display:inline";
+            var store_promo = getPromotionsForIds(store.promotions).sortBy(function(o){ return o.start_date })[0];
+            if (store_promo != undefined){
+                store.promo_btn = "/promotions/" + store_promo.slug;
+            }
+        }
+        else{
+            store.promotion_exist = "display:none";
+        }
+        if(store.phone.length < 1){
+            store.phone_exist = "display:none";
+        }
+        store.block = current_initial + '-block';
+        let rendered = Mustache.render(template_html,store);
+        var upper_current_initial = current_initial.toUpperCase();
+        item_rendered.push(rendered);
+    });
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
