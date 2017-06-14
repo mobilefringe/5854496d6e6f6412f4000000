@@ -1,5 +1,4 @@
 function init(e) {
-    console.log("init func");
     $('<div class="loader_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
     
     $("#brand_select").on('change', function() {            
@@ -8,19 +7,6 @@ function init(e) {
         }
     });  
 
-    // var _fbq = window._fbq || (window._fbq = []);
-    // if (!_fbq.loaded) {
-    //     var fbds = document.createElement('script');
-    //     fbds.async = true;
-    //     fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    //     var s = document.getElementsByTagName('script')[0];
-    //     s.parentNode.insertBefore(fbds, s);
-    //     _fbq.loaded = true;
-    //   }
-    // _fbq.push(['addPixelId', '548352815262916']);
-    // window._fbq = window._fbq || [];
-    // window._fbq.push(['track', 'PixelInitialized', {}]);
-    
     $(".long_feature_box").hover(function() {
         $(this).find(".long_feature_label").animate({
             "top": "-=81%"
