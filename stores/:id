@@ -21,10 +21,10 @@
                         <img src="//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497369767000/back_btn.png" />
                     </a>
                     {{name}} 
-                    <a href="#promo" class="pull-right" id="promo">
+                    <a href="#promo" class="pull-right hidden_now" id="promo_show">
                         <img src="//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497038419000/btn_promo.png"/>
                     </a>
-                    <a href="#job" class="pull-right" id="job">
+                    <a href="#job" class="pull-right hidden_now" id="job_show">
                         <img src="//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497369916000/btn_job.png" />
                     </a> 
                 </h1>
@@ -74,7 +74,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">            
                             <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordion{{id}}" href="#collapse{{id}}">
-                                <img ALT="arrow_down" class="pull-right" src="//mallmaverick.com/system/site_images/photos/000/000/773/original/arrow_down.png?1381269994" />
+                                <img ALT="arrow_down" class="pull-right" src="//codecloud.cdn.speedyrails.net/sites/5854496d6e6f6412f4000000/image/png/1497038985000/arrow_down.png" />
                                 <h2 class="job_title"><span class="store_name">{{store_name}}</span> - {{name}}</h2>
                                 <h2 class="job_close_date">Closing Date: {{end_date}}</h2>
                             </div>
@@ -93,9 +93,6 @@
                                 {{#contact_email}}
                                 <p><strong>Contact Email:</strong> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
                                 {{/contact_email}}
-                                {{#store_slug}}
-                                <strong><a href="{{store_slug}}">View Store: {{store_name}}</a></strong>
-                                {{/store_slug}}
                             </div>
                         </div>
                     </div> 
@@ -128,6 +125,7 @@ $(document).ready(function(e){
         });
         if( published_promos.length > 0){
             renderPromotions("#promos_container","#promos_template", published_promos);
+            $('#promo_show').show();
             $('#promotions').show();
         }
         
@@ -143,6 +141,7 @@ $(document).ready(function(e){
         });
         if( published_jobs.length > 0){
             renderJobs('#jobs_container', '#jobs_template', published_jobs);
+            $('#job_show').show();
             $('#employment').show();
         }
         
