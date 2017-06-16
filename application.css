@@ -1461,9 +1461,8 @@ hr{
     color: inherit;
     text-decoration: none;
 }
-.promo_info{
-    // float:left;
-    // width:72%;
+.promo_info img{
+    max-width: 100%;
 }
 
 .promo_info a {
@@ -1475,7 +1474,7 @@ hr{
     display: none;
 }
 #promo_details_container img,
-#event_details_container img{
+#event_details_container img {
     max-width: 100%;
     // height: 100%;
 }
