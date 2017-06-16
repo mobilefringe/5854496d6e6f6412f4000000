@@ -1463,6 +1463,7 @@ hr{
 }
 .promo_info img{
     max-width: 100%;
+    height: auto;
 }
 
 .promo_info a {
