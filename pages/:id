@@ -67,7 +67,7 @@ $(document).ready(function(e){
         $('.flexslider').flexslider({
             animation: "slide"
         });
-        
+        $(".flex-prev").html("")
         setTimeout(function() {
             show_content();
         }, 500);
