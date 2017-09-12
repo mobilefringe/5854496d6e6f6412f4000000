@@ -1,0 +1,77 @@
+<style>
+    #error_msg {
+        text-align: center;
+    }
+</style>
+<div class="page_body">
+    <h1 class="page_title" id="page_title"></h1>
+    <hr>
+    <div id="contact_us" class="hidden_now">
+        <div id="map_container">
+            <script id="map_template" type="x-tmpl-mustache/text">
+                <iframe class="hidden-xs" src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="405" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                <iframe class="visible-xs-inline-block" src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="line_break"></div>
+            </script>
+        </div>
+    </div>
+    <section class="lookbook hidden_now">
+        <div class="flexslider">
+            <ul class="slides" id="lookbook_slider">
+                <script id="lookbook_slider_template" type="x-tmpl-mustache/text">
+                    <li>
+                        <img src="{{photo_url_abs}}" alt="Lookbook Image" class ="gallery_image"/>
+                        <div class="lookbook_container"> 
+                            {{#name}}
+                            <h1 class="lookbook_header">{{name}}</h1>
+                            <p class="lookbook_description">{{description}}</p>
+                            {{/name}}
+                        </div>
+                    </li>
+                </script>
+            </ul>
+        </div>
+    </section>
+    <div id="page_body"></div>
+</div>
+<div class="mobile_line_break"></div>
+<script>
+$(document).ready(function(e){
+    init(e);
+    function renderAll(){
+        var prop_details = getPropertyDetails();
+        renderPropertyDetails('#map_container', '#map_template', prop_details);
+        
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var prefix = get_prefix();
+        var pages_json = prefix + "/pages/" + slug + ".json"
+        $.getJSON(pages_json).done(function(data) {
+            $('#page_title').html(data.title);
+            $('#page_body').html(data.body);
+            if(slug === "lambton-contact-us") {
+                $("#contact_us").show();
+            }
+            if(slug === "lambton-mall-photos"){
+                $(".lookbook").show();
+            }
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#error_msg").fadeIn("fast");
+            }
+        }); 
+        
+        var lookbook_images = getRepoDetailsByName("mall-photos").images;
+        console.log(lookbook_images)
+        renderGeneral("#lookbook_slider", "#lookbook_slider_template", lookbook_images);
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    loadMallDataCached(renderAll); 
+})
+</script>
