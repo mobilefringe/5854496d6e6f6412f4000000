@@ -1,0 +1,91 @@
+function init(e) {
+    $('<div class="loader_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
+    
+    $("#brand_select").on('change', function() {            
+        if ($(this).val() != ""){
+            window.location = "/stores/"+ $(this).val();    
+        }
+    });  
+
+    $(".long_feature_box").hover(function() {
+        $(this).find(".long_feature_label").animate({
+            "top": "-=81%"
+        }, 500)
+    }, function() {
+        $(this).find(".long_feature_label").animate({
+            "top": "+=81%"
+        }, 500)
+    });
+    
+    //Campaign Monitor Sign Up
+    $('#popupForm').submit(function (e) {
+        if ($("#agree").prop("checked") != true){
+            alert("Please agree to the term and conditions.");
+            $("#agree").focus();
+            return false;
+        }
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Please try again later.");
+                } else { // 200
+                    $('#popupForm').trigger('reset');
+                    $("#success").fadeIn();
+                    
+                    setTimeout(function(){ 
+                        $(".modal-backdrop").remove();
+	                    $(".popup_home").remove();
+                    }, 2000);
+                }
+        });
+    });
+    
+    //Campaign Monitor Sign Up
+    $('#subForm').submit(function (e) {
+        if ($("#agree_terms").prop("checked") != true){
+            alert("Please agree to the term and conditions.");
+            $("#agree_terms").focus();
+            return false;
+        }
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Please try again later.");
+                } else { // 200
+                    $('#subForm').trigger('reset');
+                    $("#success_subscribe").fadeIn();
+                }
+        });
+    });
+    
+    //dynamically changing copyright year
+var current_year = moment().year();
+$("#current_year").text(current_year);
+
+}
+
+function show_content(){
+    $(".yield").css({visibility: "visible"});
+    $(".loader_backdrop").remove();
+    
+    var header_stores = getStoresList();
+    renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
+    $("#brand_select").prepend("<option selected>Brands</option>");
+    
+    renderHomeHours();
+    
+    var prop_details = getPropertyDetails();
+    renderPropertyDetails('#prop_phone_container', '#prop_phone_template', prop_details);
+    
+    var feature_items = getFeatureList();
+    var one_item = feature_items.slice(0,1);
+    renderFeatureItems('#feature_item','#feature_item_template', one_item);
+    var two_items = feature_items.slice(1,3);
+    renderFeatureItems('#home_feature','#home_feature_template', two_items);
+}
