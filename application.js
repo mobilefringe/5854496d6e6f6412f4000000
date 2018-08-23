@@ -506,7 +506,7 @@ function renderPosts(container, template, collection){
         } else {
             val.image_url = val.image_url;
         }
-        val.short_body = val.body.substring(0,300) + "..."; 
+        val.short_body = val.body.substring(0,275) + "..."; 
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
         val.publish_date = published_on.format("MMMM Do, YYYY");
         
