@@ -603,7 +603,7 @@ legend{
     width: auto;
     margin-right: 0;
     float: none;
-    
+    font-family: futura_medium, Helvetica, sans-serif
 }
 .bottom_nav .nav_site_map .nav_sitemap_item a {
     color: #64676c;   
