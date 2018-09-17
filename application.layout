@@ -409,25 +409,25 @@
                     <div class="social_links hidden-xs">
     		            <span>
     		                <a href="//www.pinterest.com/lambtoncentre" target="_blank">
-    		                    <p style="display: none;">Pinterest</p>
+    		                    <span style="display: none;">Pinterest</span>
     		                    <i class="fa fa-pinterest social_icon" aria-hidden="true"></i>
     		                </a>
     		            </span>
     		            <span>
                             <a href="//www.instagram.com/lambtonmall" target="_blank">
-                                <p style="display: none;">Instagram</p>
+                                <span style="display: none;">Instagram</span>
                                 <i class="fa fa-instagram social_icon" aria-hidden="true"></i>
                             </a>
                         </span>
                         <span>
     		                <a href="//plus.google.com/+lambtonmall" target="_blank">
-    		                    <p style="display: none;">Google+</p>
+    		                    <span style="display: none;">Google+</span>
     		                    <i class="fa fa-google-plus-official social_icon" aria-hidden="true"></i>
 		                    </a>
 	                    </span>
     		            <span>
     		                <a href="//www.youtube.com/channel/UC_53DAYXttXXmPjfWZqkvRg" target="_blank">
-    		                    <p style="display: none;">YouTube</p>
+    		                    <span style="display: none;">YouTube</span>
     		                    <i class="fa fa-youtube social_icon" aria-hidden="true"></i>
 		                    </a>
 	                    </span>
