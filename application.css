@@ -515,11 +515,12 @@ legend{
 }
 
 .newsletter_box p {
-    // font-weight: lighter;
     padding: 5px 0px 10px;
     display: block;
-    color: #000;
+    font-family: futura_medium, Helvetica, sans-serif;
+    // font-weight: lighter;
     font-size: 0.8em;
+    color: #000;
 }
 
 .newsletter_box #fieldEmail {
