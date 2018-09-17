@@ -325,10 +325,10 @@
                             </p>
                             <label for="fieldEmail" style="display:none"> subscribe email </label>
                             <input id="fieldEmail" name=cm-ykblk-ykblk type="email" required placeholder="Your Email" />  
-                            <span>
+                            <p>
                                 <label style="display:none" for="agree_terms">Subscribe</label>
                                 <input type="checkbox" class="info_check" id="agree_terms" required /> I agree to receive newsletters from Lambton Mall
-                            </span>
+                            </p>
             				<br />						
                             <button class="btn">Subscribe</button>                      
                             <br />
