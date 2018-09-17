@@ -1,7 +1,6 @@
 <div class="promo_page">
     <div>
-        
-        <h3 id="mall_promos" class="hidden_now">There are currently no mall promotions available, please check back again later.</h3>
+        <!--<h3 id="mall_promos" class="hidden_now">There are currently no mall promotions available, please check back again later.</h3>-->
         <div id="mall_promo_container">
             <script id="mall_promo_template" type="x-tmpl-mustache/text">
                 <h1 class="page_title">Mall Promotions</h1>
