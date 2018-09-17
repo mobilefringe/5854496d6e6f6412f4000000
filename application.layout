@@ -224,6 +224,7 @@
         <div class="main_content row-fluid">
             <div class="col-md-9">
                 <div class="yield">
+                    <h1 style="display: none;">Lambton Mall</h1>
                     {{yield}}
                 </div>
             </div>
