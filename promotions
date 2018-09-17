@@ -29,7 +29,7 @@
                 <div class="row-fluid store_promo">
                     <div class="col-sm-3">
                         <a  href="{{promo_image_url_abs}}" data-lightbox="{{name}}">
-                            <img src="{{promo_image_url_abs}}">
+                            <img src="{{promo_image_url_abs}}" alt="{{name}}">
                         </a>     
                     </div>
                     <div class="col-sm-9">
@@ -37,7 +37,7 @@
                             <a href="/promotions/{{slug}}"><h2>{{name}}</h2></a>
                             <a href="/stores/{{store_detail_btn}}"><h2>{{store_name}}</h2></a>
                             <span class="promo_date">{{dates}}</span>
-                            <div><p>{{{rich_description}}}</p></div>
+                            <div>{{{rich_description}}}</div>
                         </div>
                     </div>
                 </div>
