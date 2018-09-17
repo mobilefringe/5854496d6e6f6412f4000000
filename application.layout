@@ -378,22 +378,22 @@
                         <span>NAVIGATION</span>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">STORES</span>
+                                <p class="site_map_title">STORES</p>
                                 <a class="site_map_submenu" href='/stores' target='_self'>Store Directory</a>
                                 <a class="site_map_submenu" href='/map' target='_self'>Shopping Map</a>
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">
+                                <p class="site_map_title">
                                     <a href="/promotions">PROMOTIONS</a>  
-                                </span>                                 
+                                </p>                                 
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">
+                                <p class="site_map_title">
                                     <a href="/events">CONTESTS & EVENTS</a>                                
-                                </span>
+                                </p>
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">GUEST SERVICES</span>
+                                <p class="site_map_title">GUEST SERVICES</p>
                                 <a class="site_map_submenu" href='/pages/lambton-guest-services' target='_self'>Guest Services</a>
                                 <a class="site_map_submenu" href='/pages/lambton-gift-cards' target='_self'>Gift Cards</a>
                                 <a class="site_map_submenu" href='/pages/lambton-what-s-new' target='_self'>What's New</a>
@@ -401,12 +401,12 @@
                                 <a class="site_map_submenu" href='/pages/lambton-in-the-community' target='_self'>In the Community</a>
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">
+                                <p class="site_map_title">
                                     <a href="/jobs">CAREERS</a>
-                                </span>
+                                </p>
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">ABOUT US</span>
+                                <p class="site_map_title">ABOUT US</p>
                                 <a class="site_map_submenu" href='/hours' target='_self'>Shopping Hours</a>
                                 <a class="site_map_submenu" href='/pages/lambton-leasing' target='_self'>Leasing</a>
                                 <a class="site_map_submenu" href='/pages/lambton-mall-info' target='_self'>Mall Info</a>
