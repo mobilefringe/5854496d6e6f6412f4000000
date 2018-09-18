@@ -5,7 +5,7 @@
         <script id="blog_template" type="x-tmpl-mustache/text">
             <div class="blogpost">
                 <h2>{{title}}</h2>
-                <p>{{publish_date}} + {{author}}</p>
+                <p>{{publish_date}} {{#author}}+ {{author}}{{/author}}</p>
                 <img src="{{image_url}}" alt="{{title}}"/>
                 <p class="blogpost_content">{{short_body}}</p>
                 <a href='/posts/{{slug}}' class="readmore">View Post Details</a>
