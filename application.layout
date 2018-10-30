@@ -81,7 +81,10 @@
                         </li>
                         <li class="mobile_menu_header">
                             <a href='/pages/lambton-guest-services'>GUEST SERVICES</a>
-                        </li>      
+                        </li>  
+                        <li class="mobile_menu_header">
+                            <a href='/pages/lambton-act-green-initiatives--2'>ACT GREEN INITIATIVES</a>
+                        </li>
                         <li class="mobile_menu_header" >
                             <a href='/jobs'>CAREERS</a>
                         </li>         
